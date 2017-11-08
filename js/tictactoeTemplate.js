@@ -103,9 +103,6 @@ function checkWin() {
 	// terminate the game if nobody wins.
     if (empty == 0)
         window.alert("The game ended in a draw. Please restart it!");
-    
-
-	
 }
 
 // ends the game
