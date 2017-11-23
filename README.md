@@ -1,6 +1,6 @@
 # Tic Tac Toe
 <p>Using JavaScript to build a fully functional Tic Tac Toe game. Both html and css file are given by professer.</p>
-<p><a href="http://lianxiao.dev.fast.sheridanc.on.ca/portfolio/TicTacToe/index.html">Play it</a></p>
+<p><a href="http://lianxiao.dev.fast.sheridanc.on.ca/xiaoyu/TicTacToe/index.html">Play it</a></p>
 My work as follow:
 <ul>
     <li>The ‘Reset’ button calls an incomplete reset() function – finish this to restart the game.</li>
