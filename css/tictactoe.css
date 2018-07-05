@@ -1,40 +1,99 @@
 /* 
 CSS for a mobile Tic Tac Toe game
 */
-
-root { 
-    display: block;
+/* 
+color paletter
+#FF715B	BITTERSWEET
+#87ADD8 LIGHT COBALT BLUE
+#FFF WHITE
+#000 REGISTRATION BLACK
+*/
+root {
+	display: block;
 }
+
 body {
-    text-align:center;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
 }
+
 p {
-    font-family:monospace;
+	font-family: monospace;
 }
+
 table {
-  margin:auto;
+	margin: auto;
 }
+
 td {
-    width:50px;
-    height:50px;
-    border: 1px solid black;
-    font-size:40px;
-    text-align:center;
-    font-family:arial, helvetica, sans-serif;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #fff;
+	font-size: 4rem;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
 }
 
-#cell00, #cell10, #cell20 {
-    border-left-style: none;
+#cell00,
+#cell10,
+#cell20 {
+	border-left-style: none;
 }
 
-#cell02, #cell12, #cell22 {
-    border-right-style: none;
+#cell02,
+#cell12,
+#cell22 {
+	border-right-style: none;
 }
 
-#cell00, #cell01, #cell02 {
-    border-top-style: none;
+#cell00,
+#cell01,
+#cell02 {
+	border-top-style: none;
 }
 
-#cell20, #cell21, #cell22 {
-    border-bottom-style: none;
+#cell20,
+#cell21,
+#cell22 {
+	border-bottom-style: none;
+}
+
+#player {
+	color: #FF715B;
+	font-size: 2rem;
+}
+
+input[type='button']{
+	display: block;
+	margin: 10px auto 0;
+  padding: 0.5rem 2rem;	
+  border: none;
+	color: #000;
+	background-color: #fff;
+	font-size: 1rem;
+}
+
+footer {
+	margin-top: 5%;
+}
+
+ul {
+	padding: 0;
+  list-style: none;
+}
+
+ul li {
+	display: inline-block;
+  padding: 0 10px;
+}
+
+ul li a {
+	color: #FF715B;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: #fff;
 }

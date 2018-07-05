@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <!--
 Interface for a mobile tic tac toe app
-Sam Scott, May 2012
 -->
 <html>
-    <head>
-        <title>Tic Tac Toe</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="css/tictactoe.css"/>
-        <script type="text/javascript" src="js/tictactoeTemplate.js"></script>
-    </head>
-    <body>
-        <h1>Tic Tac Toe!</h1>
-        <table>
-            <tr>
-                <td id="cell00" onclick="place(0,0);"></td>
-                <td id="cell01" onclick="place(0,1);"></td>
-                <td id="cell02" onclick="place(0,2);"></td>
-            </tr>
-            <tr>
-                <td id="cell10" onclick="place(1,0);"></td>
-                <td id="cell11" onclick="place(1,1);"></td>
-                <td id="cell12" onclick="place(1,2);"></td>
-            </tr>
-            <tr><td id="cell20" onclick="place(2,0);"></td>
-                <td id="cell21" onclick="place(2,1);"></td>
-                <td id="cell22" onclick="place(2,2);"></td>
-            </tr>
-        </table>
-        <p>
-            <span id="message">Player <span id="player">X</span> Go!</span> 
-            <input type="button" value="reset game" onclick="reset();">
-        </p> 
-    </body>
+
+<head>
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Tic Tac Toe</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="https://use.fontawesome.com/a24ec16c20.js"></script>
+
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/tictactoe.css" />
+
+	<!-- Script
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript" src="js/tictactoeTemplate.js"></script>
+</head>
+
+<body>
+	<header role="banner">
+		<h1>Tic Tac Toe!</h1>
+	</header>
+
+	<main role="main">
+		<table>
+			<tr>
+				<td id="cell00" onclick="place(0,0);"></td>
+				<td id="cell01" onclick="place(0,1);"></td>
+				<td id="cell02" onclick="place(0,2);"></td>
+			</tr>
+			<tr>
+				<td id="cell10" onclick="place(1,0);"></td>
+				<td id="cell11" onclick="place(1,1);"></td>
+				<td id="cell12" onclick="place(1,2);"></td>
+			</tr>
+			<tr>
+				<td id="cell20" onclick="place(2,0);"></td>
+				<td id="cell21" onclick="place(2,1);"></td>
+				<td id="cell22" onclick="place(2,2);"></td>
+			</tr>
+		</table>
+		<p>
+			<span id="message">Player <span id="player">X</span> Go!</span>
+			<input type="button" value="Reset" onclick="reset();">
+		</p>
+	</main>
+	<footer role="contentinfo">
+		<div>
+			<!--				<p class="email"><a href="mailto:emerald.xiaoyuliang@gmail.com">emerald.xiaoyuliang@gmail.com</a></p>-->
+			<ul class="social-icons">
+				<li><a href="http://lianxiao.dev.fast.sheridanc.on.ca/xiaoyu/" target="_blank"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">Website</span></a></li>
+				<li><a href="https://www.linkedin.com/in/emerald-liang/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">Linkedin</span></a></li>
+				<li><a href="https://github.com/lwrainbow/TicTacToe" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></a></li>
+				<li><a href="https://www.instagram.com/lwrainbow/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+			</ul>
+		</div>
+		<p>&copy; 2017 by Xiaoyu</p>
+	</footer>
+</body>
+
 </html>
